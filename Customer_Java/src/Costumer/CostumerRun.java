@@ -23,16 +23,16 @@ public class CostumerRun {
 			String name = sc.next();
 
 			System.out.println("Tax: ");
-			String tax = sc.next();
+			int tax = sc.nextInt();
 
 			System.out.println("Email: ");
-			int email = sc.nextInt();
+			String email = sc.next();
 
 			System.out.println("Post code: ");
 			int postCode = sc.nextInt();
 			
 			System.out.println("Shop numer: ");
-			int shopNumer = sc.nextInt();
+			int shopNumber = sc.nextInt();
 
 			System.out.println("Type: ");
 			String typeString = sc.next();
@@ -47,7 +47,7 @@ public class CostumerRun {
 				costumerType = type.OTHER;
 
 
-			costumerArray[i] = new CostumerStore(name, tax, email, postCode, shopNumer, costumerType);
+			costumerArray[i] = new CostumerStore(name, email, tax, postCode, shopNumber, costumerType);
 		}
 
     }
